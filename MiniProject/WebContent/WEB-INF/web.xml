@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>MailingApp</display-name>
+  <welcome-file-list>
+    <welcome-file>Login.jsp</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+  <servlet-name>UploadServlet</servlet-name>
+  <servlet-class>com.Upload.Upload</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>Register</servlet-name>
+  <servlet-class>com.Upload.Register</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  <servlet-name>UploadServlet</servlet-name>
+  <url-pattern>/submit</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+  <servlet-name>Register</servlet-name>
+  <url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+ 
+ <servlet>
+ <servlet-name>Login</servlet-name>
+ <servlet-class>com.Upload.Login</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>Login</servlet-name>
+ <url-pattern>/Login</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ <servlet-name>register_error</servlet-name>
+ <servlet-class>com.Upload.RegisterError</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>register_error</servlet-name>
+ <url-pattern>/RegisterError</url-pattern>
+ </servlet-mapping>
+</web-app>

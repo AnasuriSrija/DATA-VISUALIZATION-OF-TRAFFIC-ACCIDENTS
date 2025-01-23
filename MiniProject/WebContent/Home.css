@@ -1,0 +1,36 @@
+@charset "ISO-8859-1";
+h1.login {
+    font-family: 'Wendy One', sans-serif;
+    margin-left: 30px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #F8F9FA;
+  text-align: center;
+}
+.cont{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body,html{
+	min-height: 100vh;
+	background-color:#F8F9FA;
+}
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:#FFFF00;
+  height: 1px;
+}
+
+<!-- @media(min-width: 576px){} -->
+<!-- @media(min-width: 768px){} -->
+<!-- @media(min-width: 992px){}-->
+<!-- @media(min-width: 1200px){}-->
